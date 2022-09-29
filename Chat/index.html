@@ -59,6 +59,8 @@
 
 			socket.on('add_message', function(data){
 				$all_messages.append('<div>' + data.name + ": "+ data.mess +'</div>')
+				$('#message_form')[0].reset();
+				$("#chat_field").scrollTop(999999);
 	});
 
 
